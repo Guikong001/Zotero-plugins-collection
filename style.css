@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: left;
+    padding: 20px;
+}
+
+.site-title {
+    font-size: 32px;
+}
+
+.site-description {
+    font-size: 16px;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;  /* 合并边框 */
+    width: 100%;                /* 宽度为100% */
+  }
+  
+  td, th {
+    border: 1px solid #dddddd; /* 给单元格添加边框 */
+    text-align: left;           /* 文本居左对齐 */
+    padding: 8px;               /* 添加一些内边距 */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* 给偶数行添加背景色 */
+  }
+  
