@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>历史插件仓库</title>
-  <script>
-    window.addEventListener('load', function() {
-      // 用你的API或文件列表JSON路径替换这个URL
-      fetch('/path/to/file-list.json')
-        .then(response => response.json())
-        .then(data => {
-          const ul = document.getElementById('file-list');
-          data.files.forEach(file => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = `/plugins/${file}`;
-            a.download = file;
-            a.innerText = file;
-            li.appendChild(a);
-            ul.appendChild(li);
-          });
-        })
-        .catch(error => console.error('Error:', error));
-    });
-  </script>
+    <meta charset="UTF-8">
+    <title>历史插件仓库</title>
+    <link rel="apple-touch-icon-precomposed" href="https://www.wslll.cn/data/image/img/nicrik_noback.png">
+    <link rel="apple-touch-icon" href="https://www.wslll.cn/data/image/img/nicrik_noback.png">
+    <link rel="shortcut icon" href="https://www.wslll.cn/data/image/img/nicrik_noback.png">
 </head>
+
 <body>
-  <h1>历史插件仓库</h1>
-  <ul id="file-list">
-    <!-- 文件列表将在这里生成 -->
-  </ul>
+    <h1>历史插件仓库</h1>
+    <ul>
+        <li><a href="./plugins/jasminum-v0.2.7.xpi" download>jasminum-v0.2.7.xpi</a></li>
+        <li><a href="./plugins/zotero-better-notes-1.0.4.xpi" download>zotero-better-notes-1.0.4.xpi</a></li>
+        <li><a href="./plugins/zotero-better-notes-1.1.4-0.xpi" download>zotero-better-notes-1.1.4-0.xpi</a></li>
+        <li><a href="./plugins/zotero-citationcounts-1.3.0.xpi" download>zotero-citationcounts-1.3.0.xpi</a></li>
+        <li><a href="./plugins/zotero-file-0.0.6.xpi" download>zotero-file-0.0.6.xpi</a></li>
+        <li><a href="./plugins/zotero-file-0.1.0.xpi" download>zotero-file-0.1.0.xpi</a></li>
+        <li><a href="./plugins/zotero-file-0.2.1.xpi" download>zotero-file-0.2.1.xpi</a></li>
+        <li><a href="./plugins/zotero-folder-import-0.0.7.xpi" download>zotero-folder-import-0.0.7.xpi</a></li>
+        <li><a href="./plugins/zotero-gpt-129.xpi" download>zotero-gpt-129.xpi</a></li>
+        <li><a href="./plugins/zotero-gpt-beta-0.3.0.xpi" download>zotero-gpt-beta-0.3.0.xpi</a></li>
+        <li><a href="./plugins/zoteroif-v1.5.1.xpi" download>zoteroif-v1.5.1.xpi</a></li>
+        <li><a href="./plugins/zotero-ocr-0.6.0.xpi" download>zotero-ocr-0.6.0.xpi</a></li>
+        <li><a href="./plugins/zotero-pdf-preview-0.3.7.xpi" download>zotero-pdf-preview-0.3.7.xpi</a></li>
+        <li><a href="./plugins/zotero-pdf-translate-1.0.24.xpi" download>zotero-pdf-translate-1.0.24.xpi</a></li>
+        <li><a href="./plugins/zotero-pdf-translate-1.0.25.xpi" download>zotero-pdf-translate-1.0.25.xpi</a></li>
+        <li><a href="./plugins/zotero-pdf-translate-1.1.0-3.xpi" download>zotero-pdf-translate-1.1.0-3.xpi</a></li>
+        <li><a href="./plugins/zotero-pdf-translate-1.1.0-13.xpi" download>zotero-pdf-translate-1.1.0-13.xpi</a></li>
+        <li><a href="./plugins/zotero-pmcid-fetcher-0.0.23.xpi" download>zotero-pmcid-fetcher-0.0.23.xpi</a></li>
+        <li><a href="./plugins/zotero-reference-0.5.8.xpi" download>zotero-reference-0.5.8.xpi</a></li>
+        <li><a href="./plugins/zotero-reference-v2.xpi" download>zotero-reference-v2.xpi</a></li>
+        <li><a href="./plugins/zotero-scihub-1.4.4.xpi" download>zotero-scihub-1.4.4.xpi</a></li>
+        <li><a href="./plugins/zotero-style-2.6.7.xpi" download>zotero-style-2.6.7.xpi</a></li>
+        <li><a href="./plugins/zotero-style-2.7.xpi" download>zotero-style-2.7.xpi</a></li>
+        <li><a href="./plugins/zotero-updateifs-0.95.6.xpi" download>zotero-updateifs-0.95.6.xpi</a></li>
+        <li><a href="./plugins/zotfile-5.1.2-fx.xpi" download>zotfile-5.1.2-fx.xpi</a></li>
+        <li><a href="./plugins/zsc-2.0.4-fx.xpi" download>zsc-2.0.4-fx.xpi</a></li>
+        <li><a href="./plugins/zutilo-3.10.0.xpi" download>zutilo-3.10.0.xpi</a></li>
+        <li><a href="./plugins/zotero-gpt-0.3.1.xpi" download>zotero-gpt-0.3.1.xpi</a></li>
+        <li><a href="./plugins/zotero-pdf-translate-1.1.0-11.xpi" download>zotero-pdf-translate-1.1.0-11.xpi</a></li>
+        <li><a href="./plugins/zotero-style-3.0.5.xpi" download>zotero-style-3.0.5.xpi</a></li>
+        <li><a href="./plugins/zotero-better-notes-1.1.4-16.xpi" download>zotero-better-notes-1.1.4-16.xpi</a></li>
+        <li><a href="./plugins/zotero-file-0.2.4.xpi" download>zotero-file-0.2.4.xpi</a></li>
+        <li><a href="./plugins/Chartero1.3.3.xpi" download>Chartero1.3.3.xpi</a></li>
+        <li><a href="./plugins/chartero-2.0.0-dev.xpi" download>chartero-2.0.0-dev.xpi</a></li>
+        <li><a href="./plugins/delitemwithatt-0.2.3.xpi" download>delitemwithatt-0.2.3.xpi</a></li>
+        <li><a href="./plugins/greenfrog-0.15.0.xpi" download>greenfrog-0.15.0.xpi</a></li>
+        <li><a href="./plugins/greenfrog-0.16.02.xpi" download>greenfrog-0.16.02.xpi</a></li>
+        <li><a href="./plugins/jasminum-1.0.0-3.xpi" download>jasminum-1.0.0-3.xpi</a></li>
+        <li><a href="./plugins/jasminum-v0.2.6.xpi" download>jasminum-v0.2.6.xpi</a></li>
+        <li><a href="./plugins/zotero-figure-0.1.2.xpi" download>zotero-figure-0.1.2.xpi</a></li>
+    </ul>
 </body>
+
 </html>
