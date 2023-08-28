@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>历史插件仓库</title>
+  <script>
+    window.addEventListener('load', function() {
+      // 用你的API或文件列表JSON路径替换这个URL
+      fetch('/path/to/file-list.json')
+        .then(response => response.json())
+        .then(data => {
+          const ul = document.getElementById('file-list');
+          data.files.forEach(file => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = `/plugins/${file}`;
+            a.download = file;
+            a.innerText = file;
+            li.appendChild(a);
+            ul.appendChild(li);
+          });
+        })
+        .catch(error => console.error('Error:', error));
+    });
+  </script>
+</head>
+<body>
+  <h1>历史插件仓库</h1>
+  <ul id="file-list">
+    <!-- 文件列表将在这里生成 -->
+  </ul>
+</body>
+</html>
